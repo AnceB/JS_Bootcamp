@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Lesson 6</title>
+        <script src ="lesson_6.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                font-family: Tahoma, sans-serif;
+                background-color: rgb(214, 184, 184);
+            }
+
+            h1 {
+                text-align: center;
+                color: #fff
+            }
+
+            #content-wrapper {
+                width: 50%;
+                padding: 30px;
+
+                background-color: red;
+                border: 4px solid #fff;
+
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #time-container {
+                border-bottom: 3px solid #fff;
+            }
+
+            #time {
+                width: 90%;
+                margin: 0 auto;
+                background-color: #b8860b;
+
+                font-family: Orbitron;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .btn {
+                width: 100px;
+                margin-top: 10px;
+                padding: 10px;
+                border-radius: 5px;
+
+                background-color: #eee;
+                border: none;
+
+                font-size: 16px;
+            }
+
+            .btn:hover {
+                background-color: rgb(223, 215, 215);
+                cursor: pointer;
+            }
+
+            .btn:active {
+                background-color: rgb(177, 152, 152);
+            }
+
+            #select-box:active {
+                background-color: rgb(223, 215, 215);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="content-wrapper">
+            <h1>Tickot'y tock</h1>
+            <div id="time-container">
+                <div id="time">00:59:49</div>
+            </div>
+            <div class="button-container">
+                <button class="btn" id="start-stop-button" onclick="startStop()">Start</button>
+                <button class="btn" id="reset-button" onclick="resetTimer()">Reset</button>
+                <select id="select-box" class="btn" onchange="changeColor()">
+                    <option value="#b8860b">Gold</option>
+                    <option value="#00ff00">Green</option>
+                    <option value="#ff0000">Red</option>
+                    <option value="#ffffff">White</option>
+                    <option value="#000000">Black</option>
+                    <option value="random">Random</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>

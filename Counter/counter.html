@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="counter.css">
+        <script src="counter.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <title>Counter</title>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="stripe"></div>
+            <div class="number-container">
+                <p id="number">0</p>
+            </div>
+
+            <div class="controls-container">
+                <button class="control" onclick="decrement()">-</button>
+                <button class="control" onclick="increment()">+</button>
+            </div>
+            <button class="control reset" onclick="reset()">reset</button>
+        </div>
+    </body>
+
+</html>
